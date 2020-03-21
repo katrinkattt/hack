@@ -8,17 +8,17 @@ import FormControl from 'react-bootstrap/FormControl';
 
 export default function Toolbar() {
     return (
-        <Navbar bg="primary" variant="dark">
-            <Navbar.Brand href="#home">Главная</Navbar.Brand>
+        <Navbar className="nav__bar" bg="primary" variant="dark">
+            <Navbar.Brand href="#home">ЭКСМО Санкт-Петербург</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Жанры</Nav.Link>
-                <Nav.Link href="#features">Прайс-лист</Nav.Link>
-                <Nav.Link href="#pricing">Продукция</Nav.Link>
-                <Nav.Link href="#pricing">О фирме</Nav.Link>
+                <Nav.Link href="#janr">Жанры</Nav.Link>
+                <Nav.Link href="#price">Прайс-лист</Nav.Link>
+                <Nav.Link href="#product">Продукция</Nav.Link>
+                <Nav.Link href="#about">О фирме</Nav.Link>
             </Nav>
             <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-light">Search</Button>
+                <Button variant="outline-light">Поиск</Button>
             </Form>
         </Navbar>
     )
