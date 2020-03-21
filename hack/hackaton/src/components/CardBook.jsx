@@ -6,14 +6,15 @@ export default function CardBook(props) {
     return (
         <div className="small-block">
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" style={{height: '8rem', padding: '0 60px 0 60px'}} src={props.img} />
                 <Card.Body>
-                    <Card.Title>Book</Card.Title>
+                    <Card.Title>{props.name}</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        <div style={{fontWeight: 'bold'}}>{props.autor}</div>
+                        {props.about},
+                        
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Подробнее</Button>
                 </Card.Body>
             </Card>
         </div>
